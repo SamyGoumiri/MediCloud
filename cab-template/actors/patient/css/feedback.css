@@ -1,0 +1,282 @@
+/* Feedback Container */
+.feedback-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: var(--space-lg);
+}
+
+.feedback-header {
+    text-align: center;
+    margin-bottom: var(--space-xl);
+}
+
+.feedback-header h1 {
+    color: var(--primary-color);
+    margin-bottom: var(--space-md);
+    font-size: var(--font-xxl);
+}
+
+.feedback-header p {
+    color: var(--text-light);
+    font-size: var(--font-md);
+}
+
+/* Consultation Details */
+.consultation-details {
+    background: white;
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-xl);
+    box-shadow: var(--shadow-sm);
+    border-left: 4px solid var(--primary-color);
+}
+
+.consultation-details h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--space-md);
+    font-size: var(--font-lg);
+}
+
+.consultation-info-row {
+    display: flex;
+    gap: var(--space-lg);
+    margin-bottom: var(--space-md);
+    flex-wrap: wrap;
+}
+
+.consultation-info-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    color: var(--text-color);
+}
+
+.consultation-info-item i {
+    color: var(--primary-color);
+    font-size: var(--font-lg);
+}
+
+/* Feedback Form */
+.feedback-form {
+    background: white;
+    padding: var(--space-xl);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.rating-group {
+    margin-bottom: var(--space-xl);
+    padding-bottom: var(--space-lg);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.rating-group:last-of-type {
+    border-bottom: none;
+}
+
+.rating-group h3 {
+    color: var(--text-color);
+    margin-bottom: var(--space-xs);
+    font-size: var(--font-lg);
+}
+
+.rating-group p {
+    color: var(--text-light);
+    margin-bottom: var(--space-md);
+    font-size: var(--font-sm);
+}
+
+.rating-buttons {
+    display: flex;
+    gap: var(--space-sm);
+    justify-content: center;
+}
+
+.rating-buttons button {
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--border-color);
+    background: white;
+    color: var(--text-color);
+    border-radius: var(--radius-md);
+    font-size: var(--font-lg);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.rating-buttons button:hover {
+    border-color: var(--primary-color);
+    background: var(--bg-light);
+    transform: scale(1.05);
+}
+
+.rating-buttons button.active {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+    transform: scale(1.1);
+}
+
+/* Comments Group */
+.comments-group {
+    margin-bottom: var(--space-xl);
+}
+
+.comments-group label {
+    display: block;
+    color: var(--text-color);
+    font-weight: 600;
+    margin-bottom: var(--space-md);
+    font-size: var(--font-md);
+}
+
+.comments-group textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: var(--space-md);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    font-family: inherit;
+    font-size: var(--font-md);
+    resize: vertical;
+    transition: border-color 0.3s ease;
+}
+
+.comments-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(0, 168, 150, 0.1);
+}
+
+/* Form Actions */
+.form-actions {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+    padding-top: var(--space-lg);
+}
+
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-md) var(--space-xl);
+    background: var(--bg-light);
+    color: var(--text-color);
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-md);
+    font-size: var(--font-md);
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+    background: var(--bg-dark);
+    border-color: var(--text-light);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+.btn-submit {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-md) var(--space-xl);
+    background: var(--primary-color);
+    color: white;
+    border: 2px solid var(--primary-color);
+    border-radius: var(--radius-md);
+    font-size: var(--font-md);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Rating Display (View Mode) */
+.rating-display {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    justify-content: center;
+    margin-top: var(--space-md);
+}
+
+.rating-star {
+    font-size: 2rem;
+    color: #ddd;
+    transition: color 0.3s ease;
+}
+
+.rating-star.filled {
+    color: #ffc107;
+}
+
+.rating-value {
+    margin-left: var(--space-md);
+    font-size: var(--font-lg);
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.comments-display {
+    margin-top: var(--space-xl);
+    padding: var(--space-lg);
+    background: var(--bg-light);
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--primary-color);
+}
+
+.comments-display h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--space-md);
+    font-size: var(--font-lg);
+}
+
+.comments-text {
+    color: var(--text-color);
+    line-height: 1.6;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .feedback-container {
+        padding: var(--space-md);
+    }
+    
+    .consultation-info-row {
+        flex-direction: column;
+        gap: var(--space-sm);
+    }
+    
+    .rating-buttons button {
+        width: 45px;
+        height: 45px;
+        font-size: var(--font-md);
+    }
+    
+    .rating-star {
+        font-size: 1.5rem;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+    }
+    
+    .btn-back,
+    .btn-submit {
+        width: 100%;
+        justify-content: center;
+    }
+}
